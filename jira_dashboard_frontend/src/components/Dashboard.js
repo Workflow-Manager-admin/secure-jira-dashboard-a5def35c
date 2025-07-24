@@ -84,7 +84,7 @@ function Dashboard({ user, onLogout }) {
 
         {loading ? (
           <div className="loading-container">
-            <div className="loading-spinner"></div>
+            <div className="loading-spinner" />
             <p>Loading your projects...</p>
           </div>
         ) : (

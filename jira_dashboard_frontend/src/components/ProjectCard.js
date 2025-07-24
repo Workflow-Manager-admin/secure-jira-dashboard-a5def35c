@@ -16,7 +16,9 @@ function ProjectCard({ project }) {
 
   // PUBLIC_INTERFACE
   const formatDate = (dateString) => {
-    if (!dateString) return 'Never';
+    if (!dateString) {
+      return 'Never';
+    }
     try {
       const date = new Date(dateString);
       return date.toLocaleDateString('en-US', {
@@ -31,7 +33,9 @@ function ProjectCard({ project }) {
 
   // PUBLIC_INTERFACE
   const getAvatarUrl = (avatarUrls) => {
-    if (!avatarUrls) return null;
+    if (!avatarUrls) {
+      return null;
+    }
     return avatarUrls['48x48'] || avatarUrls['32x32'] || avatarUrls['24x24'] || avatarUrls['16x16'];
   };
 

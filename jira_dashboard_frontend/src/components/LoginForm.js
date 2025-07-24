@@ -161,7 +161,7 @@ function LoginForm({ onLogin }) {
           >
             {loading ? (
               <>
-                <span className="spinner"></span>
+                <span className="spinner" />
                 Signing in...
               </>
             ) : (
